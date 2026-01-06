@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState("dark");
 
-  // Carrega o tema salvo no localStorage
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
@@ -16,7 +16,7 @@ export default function Header() {
     }
   }, []);
 
-  // Alterna entre dark e light
+  
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/30 dark:bg-white/20 backdrop-blur-md border-b border-green-400/30 shadow-lg transition-colors">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
+     
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg shadow-green-400/50 shadow-md animate-pulse" />
           <h1 className="text-2xl font-semibold text-green-300 dark:text-green-700 tracking-widest select-none">
@@ -35,7 +35,7 @@ export default function Header() {
           </h1>
         </div>
 
-        {/* Menu desktop */}
+      
         <nav className="hidden md:flex gap-8 text-green-200 dark:text-green-700 text-sm font-medium">
           {["Início", "Sobre", "Projetos", "Blog", "Contato"].map((item) => (
             <a
@@ -49,7 +49,7 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Botões (CTA + Tema) */}
+        
         <div className="hidden md:flex items-center gap-4">
           <button
             onClick={toggleTheme}
@@ -63,7 +63,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Menu mobile */}
+      
         <button
           className="md:hidden text-green-300 dark:text-green-700"
           onClick={() => setOpen(!open)}
@@ -72,7 +72,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Dropdown mobile */}
       {open && (
         <div className="md:hidden bg-black/80 dark:bg-white/80 backdrop-blur-md border-t border-green-400/20 transition-colors">
           <nav className="flex flex-col items-center gap-4 py-6 text-green-200 dark:text-green-700">

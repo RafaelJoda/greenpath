@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="transition-colors duration-300 bg-[var(--background)] text-[var(--foreground)] py-12 px-6 border-t border-gray-300 dark:border-gray-700">
       <div className="container mx-auto grid gap-10 md:grid-cols-3 text-center md:text-left">
-        {/* Logo e descrição */}
+       
         <div className="space-y-4">
           <h3 className="text-2xl font-bold text-[var(--foreground)]">EcoFuturo</h3>
           <p className="text-sm opacity-80">
@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Links rápidos */}
+       
         <div className="space-y-3">
           <h4 className="text-lg font-semibold text-[var(--foreground)]">Links</h4>
           <ul className="space-y-2">
@@ -46,7 +46,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Redes sociais */}
+      
         <div className="space-y-3">
           <h4 className="text-lg font-semibold text-[var(--foreground)]">Conecte-se</h4>
           <div className="flex justify-center md:justify-start gap-4">
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Linha de direitos autorais */}
+      
       <div className="mt-10 pt-6 text-center text-sm opacity-70 border-t border-gray-300 dark:border-gray-700">
         © {new Date().getFullYear()} EcoFuturo. Todos os direitos reservados.
       </div>

@@ -6,18 +6,18 @@ export default function CTA() {
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-green-600 via-emerald-500 to-green-700 text-white">
       <div className="container mx-auto text-center space-y-8">
-        {/* Título */}
+
         <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg">
           Pronto para criar um futuro sustentável?
         </h2>
 
-        {/* Subtítulo */}
+       
         <p className="text-lg opacity-90 max-w-2xl mx-auto">
           Agende uma conversa gratuita e descubra como podemos transformar seu
           negócio com soluções verdes e inovadoras.
         </p>
 
-        {/* Formulário simples */}
+       
         <form className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
           <input
             type="email"
@@ -33,7 +33,7 @@ export default function CTA() {
           </button>
         </form>
 
-        {/* Observação final */}
+      
         <p className="text-sm opacity-80">Sem compromisso. Retornamos em até 24 horas.</p>
       </div>
     </section>

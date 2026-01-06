@@ -31,7 +31,7 @@ export default function Testimonials() {
       "div",
       { className: "container mx-auto text-center space-y-12" },
 
-      // Título da seção
+     
       React.createElement(
         "div",
         { className: "space-y-4" },
@@ -47,7 +47,7 @@ export default function Testimonials() {
         )
       ),
 
-      // Depoimentos
+     
       React.createElement(
         "div",
         { className: "grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" },

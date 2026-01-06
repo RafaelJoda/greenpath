@@ -34,7 +34,7 @@ export default function Features() {
       "div",
       { className: "container mx-auto text-center space-y-12" },
 
-      // Título da seção
+     
       React.createElement(
         "div",
         { className: "space-y-4" },
@@ -50,7 +50,7 @@ export default function Features() {
         )
       ),
 
-      // Grid de recursos
+     
       React.createElement(
         "div",
         {
